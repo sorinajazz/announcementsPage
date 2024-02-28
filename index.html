@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AdoptionsPage.css">
+
+    <title>Pet Adoptions</title>
+
+    <script src="AdoptionsPage.js" defer></script>
+</head>
+<body>
+
+    <!-- Upper Menu-->
+    <header>
+    <div id="menu" class="menu">
+        <div class="left">
+            <a href="#welcome">
+                <img class="menu-logo" src="images/logo.PNG">
+            </a>
+            <div class="menu_elem">Adopt</div>
+            <div class="menu_elem">Post for Adoption</div>
+        </div>
+        <div class="right">
+            <div class="menu_elem">Login</div>
+            <div class="menu_elem">Registration</div>
+        </div>
+    </div>
+    </header>
+
+    <!-- Main Layout-->
+    <div class="container">
+        <button class="button-add" id="addPetBtn">+ Add Announcement</button>
+        <div class="pets-grid" id="petsGrid"></div>
+    </div>
+
+    <!-- Modal Box to Add Announcement -->
+    <div class="modal" id="addPetModal">
+    <form class="addForm" id="addPetForm">
+        <h3>Your Announcement</h3>
+        <input class="input" type="text" id="title" placeholder="Title" required maxlength="100">
+        <p class="error-msg" id="errorMsg"></p>
+        <input class="input" type="text" id="name" placeholder="Name" maxlength="10">
+        <input class="input" type="number" id="age" placeholder="Age" maxlength="50">
+        <input class="input" type="text" id="gender" placeholder="Gender" maxlength="50">
+        <div class="is_neutered">
+            <label for="is_neutered">Is the pet neutered?</label>
+            <input class="checkbox" type="checkbox" id="isNeutered">
+        </div>
+        <input class="input" type="number" id="contact" placeholder="Contact" required maxlength="10">
+
+        <button class="Btn" type="submit">Submit</button>
+    </form>
+    </div>
+
+        <div class="overlay" id="overlay"></div>
+    
+    <!--Quiz Ready for a new dog? -->
+</body>
+</html>
